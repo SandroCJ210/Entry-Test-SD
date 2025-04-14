@@ -48,10 +48,10 @@ def run_quiz(quiz: Quiz):
         
         answer = input("Rpta.: ")
         result = quiz.answer_question(question, answer)
-        mensaje = "La respuesta es correcta" if result else "La respuesta es incorrecta"
+        mensaje = "La respuesta es correcta." if result else "La respuesta es incorrecta."
         print(mensaje)
     
-    print("Tienes ", quiz.correct_answers, " respuestas correctas y ", quiz.incorrect_answers, "respuestas incorrectas.")
+    print("Tienes ", quiz.correct_answers, " respuestas correctas y \n", quiz.incorrect_answers, "respuestas incorrectas.")
     
 
 def setQuestions(quiz: Quiz):
