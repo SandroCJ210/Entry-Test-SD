@@ -1,7 +1,7 @@
 FROM python:3
 
 #
-WORKDIR /code
+WORKDIR /app
 
 
 COPY requirements.txt ./
