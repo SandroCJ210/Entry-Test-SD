@@ -1,5 +1,5 @@
 import pytest
-from trivia import Quiz, Question
+from app.trivia import Quiz, Question
 
 def test_quiz_scoring():
     quiz = Quiz()
@@ -15,4 +15,4 @@ def test_question_correct_answer():
 def test_question_incorrect_answer():
     question = Question("What is 2 + 2?", ["1", "2", "3", "4"], "4")
     assert not question.is_correct("2")
-    
+        
