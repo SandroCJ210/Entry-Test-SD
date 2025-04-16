@@ -23,3 +23,5 @@ jobs:
           args: > 
             -Dsonar.projectKey=trivia-game-python 
             -Dsonar.sources=.
+      - name: Run Security Scan
+        run: bandit -r ./app
