@@ -16,12 +16,14 @@ jobs:
       - run: pip install -r requirements.txt
       - run: PYTHONPATH=. pytest
       - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@v1
+        uses: SonarSource/sonarqube-scan-action@v5.1.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: > 
-            -Dsonar.projectKey=trivia-game-python 
-            -Dsonar.sources=.
+            -Dsonar.organization=sandrocj210
+            -Dsonar.projectKey=SandroCJ210_Entry-Test-SD
+            -Dsonar.sources=app/
+            -Dsonar.tests=tests/
       - name: Run Security Scan
         run: bandit -r ./app
