@@ -1,3 +1,5 @@
+import json
+
 class Question:
     def __init__(self, description, options, correct_answer):
         self.description = description
@@ -31,14 +33,44 @@ class Quiz:
         else:
             self.incorrect_answers += 1
             return False
+    
+    def load_questions(self, difficulty_number: int = 1, json_path: str = "app/questions.json"):
+        difficulty = ""
+
+        if(difficulty_number == 1):
+            difficulty = "easy"
+        elif(difficulty_number == 2):
+            difficulty = "medium"
+        elif(difficulty_number == 3):
+            difficulty = "hard"
+        
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            questions_data = data.get(difficulty.lower(), [])
+            for q in questions_data:
+                question = Question(
+                    description=q["description"],
+                    options=q["options"],
+                    correct_answer=q["correct_answer"]
+                )
+                self.add_question(question)
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Error cargando preguntas: {e}")
 
     
 def run_quiz(quiz: Quiz):    
     print("¡Bienvenid@ a la trivia de la serie Invincible! Comencemos con las preguntas.")
+    difficulty = int(input("Ingrese la dificultad con la que quiere jugar: \n1. Fácil.\n2. Media.\n3. Difícil\n"))
+    quiz.load_questions(difficulty)
     questions = quiz.questions
 
     for i in range(10):
         question = quiz.get_next_question()
+
+        if(question is None):
+            break
 
         print("Pregunta ", i+1)
         print(question.description)
@@ -54,42 +86,8 @@ def run_quiz(quiz: Quiz):
     print("Tienes ", quiz.correct_answers, " respuestas correctas y \n", quiz.incorrect_answers, "respuestas incorrectas.")
     
 
-def setQuestions(quiz: Quiz):
-    question = Question("¿Cómo se llama el protagonista de la serie?", ["Nolan Grayson", "William Clockwell", "Mark Grayson", "Allen el Alien"], "Mark Grayson")
-    quiz.add_question(question)
-
-    question = Question("¿Cuál es el nombre de superhéroe de Mark?", ["Omni-Man", "Atom Boy", "Guardian", "Invincible"], "Invincible")
-    quiz.add_question(question)
-
-    question = Question("¿Quién es el padre de Mark y también un superhéroe?", ["Cecil Stedman", "Allen el Alien", "Nolan Grayson", "Donald Ferguson"], "Nolan Grayson")
-    quiz.add_question(question)
-
-    question = Question("¿Cómo se llama la madre de Mark?", ["Amber Bennett", "Debbie Grayson", "Eve Wilkins", "Samantha Eve"], "Debbie Grayson")
-    quiz.add_question(question)
-
-    question = Question("¿Qué poder tiene Atom Eve?", ["Superfuerza", "Invisibilidad", "Manipulación de la materia y energía", "Control del tiempo"], "Manipulación de la materia y energía")
-    quiz.add_question(question)
-
-    question = Question("¿Cómo se llama el mejor amigo de Mark?", ["Rex Splode", "William Clockwell", "Cecil Stedman", "Allen el Alien"], "William Clockwell")
-    quiz.add_question(question)
-
-    question = Question("¿Qué equipo de superhéroes es destruido por Omni-Man en el primer episodio?", ["Guardianes del Globo", "Los Vengadores", "Liga de la Justicia", "Guardianes de la Galaxia"], "Guardianes del Globo")
-    quiz.add_question(question)
-
-    question = Question("¿Qué especie alienígena es Omni-Man?", ["Kryptoniano", "Viltrumita", "Namekiano", "Saiyajin"], "Viltrumita")
-    quiz.add_question(question)
-
-    question = Question("¿Cómo se llama la novia de Mark durante la primera temporada?", ["Eve Wilkins", "Debbie Grayson", "Amber Bennett", "Tara"], "Amber Bennett")
-    quiz.add_question(question)
-
-    question = Question("¿Qué personaje extraterrestre desafía a Mark en un combate de prueba?", ["Allen el Alien", "Thokk", "Battle Beast", "Thragg"], "Allen el Alien")
-    quiz.add_question(question)
-
-
-
 def main():
     quiz = Quiz()
-    setQuestions(quiz)
     run_quiz(quiz)
 
 if __name__=="__main__":
