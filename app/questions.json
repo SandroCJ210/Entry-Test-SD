@@ -1,0 +1,160 @@
+{
+    "easy": [
+      {
+        "description": "¿Cómo se llama el protagonista de la serie?",
+        "options": ["Nolan Grayson", "William Clockwell", "Mark Grayson", "Allen el Alien"],
+        "correct_answer": "Mark Grayson"
+      },
+      {
+        "description": "¿Cuál es el nombre de superhéroe de Mark?",
+        "options": ["Omni-Man", "Atom Boy", "Guardian", "Invincible"],
+        "correct_answer": "Invincible"
+      },
+      {
+        "description": "¿Quién es el padre de Mark y también un superhéroe?",
+        "options": ["Cecil Stedman", "Allen el Alien", "Nolan Grayson", "Donald Ferguson"],
+        "correct_answer": "Nolan Grayson"
+      },
+      {
+        "description": "¿Cómo se llama la madre de Mark?",
+        "options": ["Amber Bennett", "Debbie Grayson", "Eve Wilkins", "Samantha Eve"],
+        "correct_answer": "Debbie Grayson"
+      },
+      {
+        "description": "¿Qué poder tiene Atom Eve?",
+        "options": ["Superfuerza", "Invisibilidad", "Manipulación de la materia y energía", "Control del tiempo"],
+        "correct_answer": "Manipulación de la materia y energía"
+      },
+      {
+        "description": "¿Cómo se llama el mejor amigo de Mark?",
+        "options": ["Rex Splode", "William Clockwell", "Cecil Stedman", "Allen el Alien"],
+        "correct_answer": "William Clockwell"
+      },
+      {
+        "description": "¿Qué equipo de superhéroes es destruido por Omni-Man en el primer episodio?",
+        "options": ["Guardianes del Globo", "Los Vengadores", "Liga de la Justicia", "Guardianes de la Galaxia"],
+        "correct_answer": "Guardianes del Globo"
+      },
+      {
+        "description": "¿Qué especie alienígena es Omni-Man?",
+        "options": ["Kryptoniano", "Viltrumita", "Namekiano", "Saiyajin"],
+        "correct_answer": "Viltrumita"
+      },
+      {
+        "description": "¿Cómo se llama la novia de Mark durante la primera temporada?",
+        "options": ["Eve Wilkins", "Debbie Grayson", "Amber Bennett", "Tara"],
+        "correct_answer": "Amber Bennett"
+      },
+      {
+        "description": "¿Qué personaje extraterrestre desafía a Mark en un combate de prueba?",
+        "options": ["Allen el Alien", "Thokk", "Battle Beast", "Thragg"],
+        "correct_answer": "Allen el Alien"
+      }
+    ],
+    "medium": [
+      {
+        "description": "¿Qué color tiene el traje de Invincible?",
+        "options": ["Rojo y negro", "Amarillo y azul", "Verde y dorado", "Negro y gris"],
+        "correct_answer": "Amarillo y azul"
+      },
+      {
+        "description": "¿Quién lidera la Agencia de Defensa Global?",
+        "options": ["Nolan Grayson", "Cecil Stedman", "Art Rosenbaum", "Doc Seismic"],
+        "correct_answer": "Cecil Stedman"
+      },
+      {
+        "description": "¿Qué hace Donald Ferguson?",
+        "options": ["Es compañero de clase de Mark", "Es el asistente de Cecil", "Es un superhéroe", "Es el entrenador de Mark"],
+        "correct_answer": "Es el asistente de Cecil"
+      },
+      {
+        "description": "¿Quién sospecha de las acciones de Omni-Man?",
+        "options": ["Cecil", "Amber", "Damien Darkblood", "William"],
+        "correct_answer": "Damien Darkblood"
+      },
+      {
+        "description": "¿Cuál es la relación de Eve con Mark en la serie?",
+        "options": ["Son pareja desde el inicio", "Nunca se conocen", "Son amigos y luego aliados", "Son enemigos"],
+        "correct_answer": "Son amigos y luego aliados"
+      },
+      {
+        "description": "¿Qué personaje tiene poderes eléctricos?",
+        "options": ["Atom Eve", "Rex Splode", "Zandale", "Kurse"],
+        "correct_answer": "Rex Splode"
+      },
+      {
+        "description": "¿Dónde trabaja la madre de Mark?",
+        "options": ["En la escuela", "Como escritora", "En bienes raíces", "En la Agencia de Defensa Global"],
+        "correct_answer": "En bienes raíces"
+      },
+      {
+        "description": "¿Quién crea los trajes de los superhéroes?",
+        "options": ["Allen", "Art Rosenbaum", "Doc Seismic", "Thragg"],
+        "correct_answer": "Art Rosenbaum"
+      },
+      {
+        "description": "¿Cuál es el arma principal de Battle Beast?",
+        "options": ["Espada", "Maza", "Lanza", "Sus puños"],
+        "correct_answer": "Maza"
+      },
+      {
+        "description": "¿Cuál es la primera gran batalla de Invincible?",
+        "options": ["Contra los Gemelos Mauler", "Contra Thokk", "Contra Titan", "Contra Machine Head"],
+        "correct_answer": "Contra los Gemelos Mauler"
+      }
+    ],
+    "hard": [
+      {
+        "description": "¿Qué planeta visita Mark como parte de una misión?",
+        "options": ["Venus", "Urano", "Marte", "Saturno"],
+        "correct_answer": "Marte"
+      },
+      {
+        "description": "¿Cuál es la debilidad de los Viltrumitas?",
+        "options": ["Oxígeno puro", "Ruidos agudos", "Enfermedades de razas débiles", "Radiación gamma"],
+        "correct_answer": "Enfermedades de razas débiles"
+      },
+      {
+        "description": "¿Qué personaje pierde la vida reconstruyendo su cuerpo constantemente?",
+        "options": ["Machine Head", "Titan", "Robot", "Dupli-Kate"],
+        "correct_answer": "Robot"
+      },
+      {
+        "description": "¿Qué personaje clonó su cuerpo para escapar de su físico deteriorado?",
+        "options": ["Cecil", "Art", "Robot", "Allen el Alien"],
+        "correct_answer": "Robot"
+      },
+      {
+        "description": "¿Cómo se llama el planeta natal de los Viltrumitas?",
+        "options": ["Viltrum", "Viltros", "Vultron", "Veltrax"],
+        "correct_answer": "Viltrum"
+      },
+      {
+        "description": "¿Qué héroe tiene la habilidad de duplicarse?",
+        "options": ["Dupli-Kate", "Atom Eve", "Rex Splode", "Monster Girl"],
+        "correct_answer": "Dupli-Kate"
+      },
+      {
+        "description": "¿Qué pasa con Monster Girl al usar sus poderes?",
+        "options": ["Envejece", "Pierde fuerza", "Pierde memoria", "Rejuvenece"],
+        "correct_answer": "Rejuvenece"
+      },
+      {
+        "description": "¿Quién es el líder de los Gemelos Mauler?",
+        "options": ["Mauler Alpha", "Mauler Prime", "No hay líder definido", "Mauler Rex"],
+        "correct_answer": "No hay líder definido"
+      },
+      {
+        "description": "¿Cómo se llama el extraterrestre con un solo ojo que evalúa planetas?",
+        "options": ["Allen el Alien", "Thragg", "Ursaal", "Zax"],
+        "correct_answer": "Allen el Alien"
+      },
+      {
+        "description": "¿Qué personaje usa una máscara con implantes cibernéticos?",
+        "options": ["Machine Head", "Titan", "Robot", "Darkwing"],
+        "correct_answer": "Machine Head"
+      }
+    ]
+  }
+  
+  
